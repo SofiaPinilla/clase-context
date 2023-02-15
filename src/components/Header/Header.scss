@@ -1,0 +1,25 @@
+@import "../../colors.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  nav {
+    background-color: $gray;
+    span {
+      color: $green;
+    }
+  }
+}
+
+
+.message {
+  @extend %message-shared;
+}
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
